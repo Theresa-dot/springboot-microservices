@@ -1040,7 +1040,7 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     </schema>
     <schema id="293" parent="1" name="organization_db">
       <Current>1</Current>
-      <LastIntrospectionLocalTimestamp>2024-07-20.07:44:20</LastIntrospectionLocalTimestamp>
+      <LastIntrospectionLocalTimestamp>2024-07-26.11:56:29</LastIntrospectionLocalTimestamp>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
     <schema id="294" parent="1" name="performance_schema">
@@ -1052,72 +1052,75 @@ sys|schema||mysql.sys|localhost|TRIGGER|G</Grants>
     <schema id="296" parent="1" name="user_management">
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </schema>
-    <user id="297" parent="1" name="mysql.infoschema">
+    <schema id="297" parent="1" name="users">
+      <CollationName>utf8mb4_0900_ai_ci</CollationName>
+    </schema>
+    <user id="298" parent="1" name="mysql.infoschema">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="298" parent="1" name="mysql.session">
+    <user id="299" parent="1" name="mysql.session">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="299" parent="1" name="mysql.sys">
+    <user id="300" parent="1" name="mysql.sys">
       <CanLogin>0</CanLogin>
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="300" parent="1" name="root">
+    <user id="301" parent="1" name="root">
       <Host>localhost</Host>
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <user id="301" parent="1" name="theresaj">
+    <user id="302" parent="1" name="theresaj">
       <Plugin>caching_sha2_password</Plugin>
     </user>
-    <table id="302" parent="293" name="organizations">
+    <table id="303" parent="293" name="organizations">
       <Engine>InnoDB</Engine>
       <CollationName>utf8mb4_0900_ai_ci</CollationName>
     </table>
-    <column id="303" parent="302" name="id">
-      <AutoIncrement>1</AutoIncrement>
+    <column id="304" parent="303" name="id">
+      <AutoIncrement>3</AutoIncrement>
       <DasType>bigint|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="304" parent="302" name="created_date">
+    <column id="305" parent="303" name="created_date">
       <DasType>datetime(6)|0s</DasType>
       <Position>2</Position>
     </column>
-    <column id="305" parent="302" name="organization_code">
+    <column id="306" parent="303" name="organization_code">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="306" parent="302" name="organization_description">
+    <column id="307" parent="303" name="organization_description">
       <DasType>varchar(255)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="307" parent="302" name="organization_name">
+    <column id="308" parent="303" name="organization_name">
       <DasType>varchar(255)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="308" parent="302" name="PRIMARY">
+    <index id="309" parent="303" name="PRIMARY">
       <ColNames>id</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <index id="309" parent="302" name="UKlj2ht6veutd7ylobki761jitv">
+    <index id="310" parent="303" name="UKlj2ht6veutd7ylobki761jitv">
       <ColNames>organization_code</ColNames>
       <Type>btree</Type>
       <Unique>1</Unique>
     </index>
-    <key id="310" parent="302" name="PRIMARY">
+    <key id="311" parent="303" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <Primary>1</Primary>
       <UnderlyingIndexName>PRIMARY</UnderlyingIndexName>
     </key>
-    <key id="311" parent="302" name="UKlj2ht6veutd7ylobki761jitv">
+    <key id="312" parent="303" name="UKlj2ht6veutd7ylobki761jitv">
       <UnderlyingIndexName>UKlj2ht6veutd7ylobki761jitv</UnderlyingIndexName>
     </key>
   </database-model>
