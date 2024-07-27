@@ -14,7 +14,8 @@ The project focuses on building Java microservices for learning purposes. The pr
 - **Distributed Tracing:** Zipkin.
 - **Circuit Breakers:** Resilience4j.
 
-  ![image](https://github.com/user-attachments/assets/9ab4895f-0a12-4b7f-9c4e-32babe9d1ef9)
+ ![image](https://github.com/user-attachments/assets/2958a60a-0693-4fa0-a7f9-159d5a54d69b)
+
 
 
 #### Goals
